@@ -15,33 +15,40 @@ This repository contains:
 **1️⃣ Place your CSV files:**
 
 data/
-├── 2024_fb_ads_president_scored_anon.csv
-├── 2024_fb_posts_president_scored_anon.csv
-└── 2024_tw_posts_president_scored_anon.csv
+`├── 2024_fb_ads_president_scored_anon.csv`
+`├── 2024_fb_posts_president_scored_anon.csv`
+`└── 2024_tw_posts_president_scored_anon.csv`
 
 ---
 
 **2️⃣ In each script, manually enter the dataset name as required:**
 
-```python
 dataset = 'ads'  # or 'fb_posts' or 'twitter'
 
-**Note:** You can also adjust the numeric_col or text_col inside each script if you want to explore different columns.
+> **Note:** You can also adjust the numeric_col or text_col inside each script if you want to explore different columns.
+
+---
 
 **3️⃣ Run each script one by one in your terminal (e.g. in Visual Studio Code):**
-python pure_python_stats.py
-python pandas_stats.py
-python polars_stats.py
-python visuals.py
+`python pure_python_stats.py`
+`python pandas_stats.py`
+`python polars_stats.py`
+`python visuals.py`
 
+---
 
 # 📈 Summary of Visualizations
-Ads: Scatter plot visualizes the relationship between how much money was spent and the reach each ad achieved. It highlights which ads are more cost-efficient by comparing spend to estimated impressions.
 
-Facebook Posts: Bar chart shows which post types (Photo, Video, Link, etc.) generate higher average total interactions. This helps identify which content formats are most engaging.
+Ads: Scatter plot visualizes the relationship between how much money was spent and the reach each ad achieved. 
+It highlights which ads are more cost-efficient by comparing spend to estimated impressions.
 
-Twitter: Line chart illustrates how tweet activity changes over time, grouped by month/year. It reveals spikes or drops in posting frequency that may align with campaign phases or events.
+Facebook Posts: Bar chart shows which post types (Photo, Video, Link, etc.) generate higher average total interactions. 
+This helps identify which content formats are most engaging.
 
+Twitter: Line chart illustrates how tweet activity changes over time, grouped by month/year. 
+It reveals spikes or drops in posting frequency that may align with campaign phases or events.
+
+---
 
 ## 🔍 Reflection
 * Using pure Python, Pandas, and Polars produced the same descriptive statistics after ensuring numeric columns were properly converted and missing data handled.
