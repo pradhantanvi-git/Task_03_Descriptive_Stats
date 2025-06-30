@@ -15,8 +15,11 @@ This repository contains:
 **1️⃣ Place your CSV files:**
 
 data/
+
 `├── 2024_fb_ads_president_scored_anon.csv`
+
 `├── 2024_fb_posts_president_scored_anon.csv`
+
 `└── 2024_tw_posts_president_scored_anon.csv`
 
 ---
@@ -30,9 +33,13 @@ dataset = 'ads'  # or 'fb_posts' or 'twitter'
 ---
 
 **3️⃣ Run each script one by one in your terminal (e.g. in Visual Studio Code):**
+
 `python pure_python_stats.py`
+
 `python pandas_stats.py`
+
 `python polars_stats.py`
+
 `python visuals.py`
 
 ---
